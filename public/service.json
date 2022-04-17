@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Business Law",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/BgGSLpt/1-1.png"
+    },
+    {
+        "id": 2,
+        "name": "Finance Law",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/Ybhf9mD/2-1.png"
+    },
+    {
+        "id": 3,
+        "name": "Family Law",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/pKv29tM/busniess-law.jpg"
+    }
+]
