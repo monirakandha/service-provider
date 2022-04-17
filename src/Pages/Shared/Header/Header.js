@@ -7,13 +7,14 @@ const Header = () => {
   return <div>
   <Navbar collapseOnSelect expand="lg" sticky="top"  bg="dark" variant="dark">
     <Container>
-    <Navbar.Brand  as={ Link} to="/"><img src={logo}  alt="" srcset="" /></Navbar.Brand>
+    <Navbar.Brand  as={Link} to="/"><img src={logo}  alt="" srcset="" /></Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav"> 
-    <Nav className="me-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
+    <Nav className="justify-content-end" style={{ width: "100%" }}>
+      <Nav.Link  as={Link} to="/" activeClassName="selected" >Home</Nav.Link>
+      <Nav.Link as={Link}  to="/about">About</Nav.Link>
+      <Nav.Link as={Link} to="/practricarea">Practice Area</Nav.Link>
+      <Nav.Link as={Link}  to="/blog">BLogs</Nav.Link>
     </Nav>
     </Navbar.Collapse>
     </Container>
