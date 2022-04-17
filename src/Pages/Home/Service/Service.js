@@ -15,6 +15,9 @@ const Service = ({ service }) => {
         <Card.Body>
           <Card.Title>{name}</Card.Title>
           <Card.Text>
+          ${price}
+          </Card.Text>
+          <Card.Text>
           {description}
           </Card.Text>
           <Button onClick={() => navigate('/checkout') } variant="primary">Get Service For : {name}</Button>
