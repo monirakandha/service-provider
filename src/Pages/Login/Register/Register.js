@@ -18,7 +18,7 @@ const Register = () => {
           navigate('/login');
       }
       if(user){
-          navigate('/');
+          navigate('/home');
       }
       const handleRegister = event =>{
         event.preventDefault();
@@ -33,21 +33,21 @@ console.log(user);
       <Form onSubmit={handleRegister}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>User Name</Form.Label>
-          <Form.Control type="text" placeholder="Enter Name" />
+          <Form.Control type="text" placeholder="Enter Name" required />
           <Form.Text className="text-muted">
             We'll never share your infor with anyone else.
           </Form.Text>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
-          <Form.Control type="email"  name="email" placeholder="Enter email" />
+          <Form.Control type="email"  name="email" placeholder="Enter email" required />
           <Form.Text className="text-muted">
             We'll never share your email with anyone else.
           </Form.Text>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
-          <Form.Control type="password" name="password" placeholder="Password" />
+          <Form.Control type="password" name="password" placeholder="Password" required />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
           <Form.Check type="checkbox" label="Remember Me" />
