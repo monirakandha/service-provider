@@ -8,7 +8,7 @@ import auth from '../../../firebase.init';
 const Header = () => {
   const [user] = useAuthState(auth);
   return <div>
-  <Navbar collapseOnSelect expand="lg" sticky="top"  bg="dark" variant="dark">
+  <Navbar collapseOnSelect expand="lg" sticky="top" bg="dark" variant="dark">
     <Container>
     <Navbar.Brand  as={Link} to="/"><img src={logo}  alt="" srcset="" /></Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />

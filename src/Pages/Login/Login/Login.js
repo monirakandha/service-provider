@@ -11,6 +11,8 @@ const Login = () => {
     const emailRef = useRef('');
     const passWordRef = useRef('');
     const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || "";
     const [
       signInWithEmailAndPassword,
       user,
@@ -25,7 +27,6 @@ const Login = () => {
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
     const handleSubmit = event => {
         event.preventDefault();
-       
         const password = passWordRef.current.value;
         console.log(email , password);
         signInWithEmailAndPassword(email , password);
@@ -42,13 +43,9 @@ const Login = () => {
         toast("please enter your email address");
       }
     };
-
-  const location = useLocation();
-  const from = location.state?.from?.pathname || "/";
-
   useEffect(() => {
     if (user) {
-      navigate(from);
+      navigate(from , {replace:true});
     }
   }, [user]);
   return (
