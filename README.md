@@ -1,21 +1,23 @@
 # LAWYER SERVICE
 
 It is an Lawyer service provider website. Build with react.  It's a dynamic Resposive website. It has awesome Designed responsive pages.
-It contains Home, Services, Checkout, About, Contact, Blogs, Login & SignUp pages.
+It contains Home, Services, Checkout, About, Contact, Blogs, Login & SignUp pages.Where user can checkout our service.It's a lawyer service website where lawyer show which service is provide by this lawyer.
 
-A user can eassily create an account and get premium services. This site has authentication feature. 
-User authentication is must for get services.
+A user can easily create an account and get premium services. This site has authentication feature.User authentication is must for get services.
 
 # Live Site link: 
-Click here [Jk Fitness](https://independent-service-prov-fd50a.web.app/)
+Click here [LAWYER SERVICE](https://independent-service-prov-fd50a.web.app/)
 
 ## Features
 
- - User Authentication
+ - User Authentication using email password
+ -  Social Login like : Google , Github
  - Login page
  - Sign up page
  - Dynamic route
- - Smoothe user experience
+ -  About Us
+ - Future PLan
+ - Private Route Use
  - Blog page
  - Responsive
 ## Technology Used

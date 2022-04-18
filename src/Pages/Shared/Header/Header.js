@@ -16,7 +16,6 @@ const Header = () => {
     <Nav className="justify-content-end" style={{ width: "100%" }}>
       <Nav.Link  as={Link} to="/" activeClassName="selected" >Home</Nav.Link>
       <Nav.Link as={Link}  to="/about">About</Nav.Link>
-      <Nav.Link as={Link} to="/practricarea">Practice Area</Nav.Link>
       <Nav.Link as={Link}  to="/blog">BLogs</Nav.Link>
       {
             user ?

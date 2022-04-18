@@ -1,34 +1,43 @@
-import React from 'react';
 import google from '../../../images/social-icons/google.png';
-import facebook from '../../../images/social-icons/facebook.png';
 import github from '../../../images/social-icons/github.png'
-import { useSignInWithFacebook, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import {useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import { Navigate, useLocation, useNavigate } from 'react-router-dom';
 import Loading from '../../Shared/Loading/Loading';
+import React, { useEffect} from "react";
 const SocialLogin = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const [signInWithGithub, user1, loading1, error1] = useSignInWithGithub(auth);
-    const [signInWithFacebook, user2, loading2, error2] = useSignInWithFacebook(auth);
     const navigate = useNavigate();
     const location = useLocation();
+    const from = location.state?.from?.pathname || "/";
+
+    useEffect(() => {
+        if (user || user1) {
+          navigate(from , {replace:true});
+        }
+      }, [user|| user1]);
 
     let errorElement ;
-    if(loading || loading1 || loading2){
+    if(loading || loading1){
         return <Loading></Loading>
     }
-    if (error || error1 || error2) {
+    if (error || error1) {
         errorElement = <div>
-            <p className='text-danger' >Error: {error?.message} {error1?.message} {error2?.message}</p>
+            <p className='text-danger' >Error: {error?.message} {error1?.message}</p>
           </div>
         
-      }
+      };
 
-      if(user || user1 || user2){
-        
-        return <Navigate to="/checkout" state={{ from: location }} replace />;
-      }
 
+
+    //   useEffect(() => {
+    //     if (user || user1) {
+    //       navigate(from , {replace:true});
+    //     }
+    //   }, [user|| user1]);
+
+console.log(user);
     return (
         <div>
             <div className='d-flex align-items-center'>
