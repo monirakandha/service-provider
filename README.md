@@ -6,7 +6,7 @@ It contains Home, Services, Checkout, About, Contact, Blogs, Login & SignUp page
 A user can easily create an account and get premium services. This site has authentication feature.User authentication is must for get services.
 
 # Live Site link: 
-Click here [LAWYER SERVICE](https://independent-service-prov-fd50a.web.app/)
+Click here [LAWYER SERVICE](https://lawyer-service-provider-33e79.web.app/)
 
 ## Features
 
