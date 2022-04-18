@@ -11,8 +11,7 @@ const HomePractric = () => {
                 Practice Area
               </h2>
               <h5 className="text-center" style={{ fontSize: "1em" }}>
-                Many variations of passages of Lorem Ipsum available, but the
-                majority have suffered alteration in some.
+                We Are Ready for Provide 5 Star class Service For You. Let's connect with us and get our premimum service
               </h5>
             </div>
           </Col>

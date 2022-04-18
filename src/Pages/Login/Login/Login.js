@@ -70,7 +70,7 @@ const Login = () => {
         </Button>
       </Form>
       {errorElement}
-      <p>New To Genius Car <Link to='/register' className="text-danger pe-auto" onClick={navigateRegister}>Please Register</Link> </p>
+      <p>New To Lawyer Service <Link to='/register' className="text-danger pe-auto" onClick={navigateRegister}>Please Register</Link> </p>
       <p>Forget Password ?<span  style={{cursor: "pointer"}} className="text-danger pe-auto" onClick={resetPassword}>Reset Password</span> </p>
       <SocialLogin></SocialLogin>
     </div>

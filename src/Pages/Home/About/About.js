@@ -10,16 +10,13 @@ const About = () => {
       <Container>
         <Row>
           <Col>
-            <div>
+            <div className="name-me">
               <img className="mx-auto d-block" src={HomeImg} alt="" srcset="" />
               <h2 className="text-center" style={{ fontSize: "1.5em" }}>
                 Finest And Strongest Law Firm Win The World
               </h2>
               <h5 className="text-center" style={{ fontSize: "1em"}}>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable.
+              We offer 5 star service to our clients, which is why we have been so successful in what we do. We are driven to get the best results and have won thousands of cases for our clients.
               </h5>
               <img className="mx-auto d-block" src={Signature } alt="" srcset="" />
             </div>
@@ -31,10 +28,7 @@ const About = () => {
                 Finest And Strongest Law Firm Win The World
               </h2>
               <h5 className="text-center" style={{ fontSize: "1em"}}>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable.
+              Our firm never charges any upfront fees. We handle personal injury cases on a contingency fee basis, which means, you don’t pay a thing unless we win or settle your case.
               </h5>
             </div></Col>
         </Row>
